@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "LTGUIMgr.h"
+#include "ltguimgr.h"
 #include "stdlith.h"
 
 class CGroupSubCtrl
@@ -43,8 +43,8 @@ public:
 	void		Render ( HSURFACE hDestSurf );
 
 	// Width/Height calculations
-	int			GetWidth ( )	{return m_nWidth; }
-	int			GetHeight ( )	{return m_nHeight; }
+	uint16			GetWidth ( )	{return m_nWidth; }
+	uint16			GetHeight ( )	{return m_nHeight; }
 
 	// Handle a keypress
     LTBOOL       HandleKeyDown(int key, int rep);

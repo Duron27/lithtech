@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "LTGUIMgr.h"
+#include "ltguimgr.h"
 #include "stdlith.h"
 
 class CBitmapCtrl : public CLTGUICtrl
@@ -28,8 +28,8 @@ public:
 	virtual void	Render ( HSURFACE hDestSurf );
 
 	// Width/Height calculations
-	virtual int		GetWidth ( );
-	virtual int		GetHeight ( );
+	virtual uint16		GetWidth ( );
+	virtual uint16		GetHeight ( );
 
     virtual LTBOOL   OnEnter();
     virtual LTBOOL   OnLButtonUp (int x, int y) {return OnEnter();}

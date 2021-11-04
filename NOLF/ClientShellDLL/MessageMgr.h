@@ -18,7 +18,7 @@
 #include "iclientshell.h"
 #include "iltclient.h"
 #include "CheatDefs.h"
-#include "LTGUIMgr.h"
+#include "ltguimgr.h"
 
 // defines
 enum eMessageType
@@ -148,7 +148,7 @@ class CMessageMgr
 		void				DeleteMessageData(Message *pMsg);
 
 		CInputLine			m_InputLine;	// Current input message
-		CLTGUIFont*			m_pForeFont;		// menu font
+		CUIFont*			m_pForeFont;		// menu font
 
         LTBOOL               m_bEnabled;
         LTBOOL               m_bEditing;

@@ -16,7 +16,7 @@
 #include "GameButeMgr.h"
 #include "ltbasetypes.h"
 #include "DamageTypes.h"
-#include "CommandIds.h"
+#include "CommandIDs.h"
 #include "TemplateList.h"
 #include "FXButeMgr.h"
 

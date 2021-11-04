@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include "iltclient.h"
-#include "ILTStream.h"
+#include "iltstream.h"
 
 class VarTrack
 {
@@ -62,9 +62,9 @@ class VarTrack
 			return defVal;
 	}
 
-	inline char* GetStr(char *pDefault="")
+	inline const char* GetStr(char *pDefault="")
 	{
-		char *pRet;
+		const char *pRet;
 
 		if(m_pClientDE && m_hVar)
 		{

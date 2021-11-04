@@ -14,9 +14,9 @@
 #define __PLAYERSTATS_H
 
 #include "ltbasedefs.h"
-#include "weaponmgr.h"
-#include "overlays.h"
-#include "objectives.h"
+#include "WeaponMgr.h"
+#include "Overlays.h"
+#include "Objectives.h"
 
 class CGameClientShell;
 class CMissionData;

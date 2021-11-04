@@ -18,7 +18,7 @@
 #include "SFXMsgIds.h"
 #include "TemplateList.h"
 #include "BankedList.h"
-#include "iltcustomdraw.h"
+#include "iltdrawprim.h"
 
 struct PLFXCREATESTRUCT : public SFXCREATESTRUCT
 {
@@ -78,8 +78,8 @@ inline PLFXCREATESTRUCT::PLFXCREATESTRUCT()
 	fMaxDistMult			= 2.5f;
     bLinesShareNormal       = LTTRUE;
 	pTexture				= LTNULL;
-	dwTexAddr				= LTTEXADDR_WRAP;
-	dwColorOp				= LTOP_MODULATE;
+	dwTexAddr				= 0;
+	dwColorOp				= DRAWPRIM_MODULATE;
 
 	vInnerColorStart.Init();
 	vInnerColorEnd.Init();
@@ -226,7 +226,7 @@ class CPolyLineFX : public CBasePolyDrawFX
 
 	protected :
 
-        virtual LTBOOL Draw(ILTCustomDraw *pDraw);
+        virtual LTBOOL Draw(ILTDrawPrim *pDraw);
 
 		PLFXCREATESTRUCT	m_cs;
 

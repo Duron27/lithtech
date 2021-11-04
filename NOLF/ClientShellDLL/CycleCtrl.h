@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "LTGUIMgr.h"
+#include "ltguimgr.h"
 #include "stdlith.h"
 
 class CCycleCtrl : public CLTGUICycleCtrl
