@@ -1,3 +1,4 @@
+#include <array>
 #include "bdefs.h"
 #include "ogl_render.h"
 #include "de_objects.h"
