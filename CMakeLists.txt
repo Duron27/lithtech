@@ -13,6 +13,10 @@ if(NOT WIN32)
   endif()
 endif()
 
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    add_compile_options(-Wno-stringop-overflow)
+endif()
+
 option(BUILD_ENGINE "Build engine" ON)
 option(BUILD_NOLF2 "Build No One Lives Forever 2 game code" ON)
 option(BUILD_TRON "Build Tron 2.0 game code" OFF)
